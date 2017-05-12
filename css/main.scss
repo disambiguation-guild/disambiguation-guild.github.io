@@ -93,17 +93,21 @@ Author's custom styles
 ========================================================================== */
 
 body {
-  background: #FFAFBD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
   font-family: 'Karla', sans-serif;
+  background: url('/assets/bg2.jpg');
+  background-position: left bottom;
+  // background-size: cover;
+  background-attachment: fixed;
 }
 
-h1{
-  font-size: 38px;
-  font-weight:700;
+h1 {
+  font-size: 34px;
+  font-weight:400;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 #wrapper {
@@ -114,24 +118,64 @@ h1{
 
 #content {
   margin: 0 auto;
-  margin-top: 100px;
-  max-width: 600px;
+  margin-top: 75px;
+  // max-width: 832px;
+  max-width: 1253px;
 }
 
-ol {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 4px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,.20);
-  font-size: 12px;
+nav {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: 20px;
+  max-width: 550px;
+
+  a {
+  	position: relative;
+  	display: inline-block;
+  	margin: 15px 25px;
+  	outline: none;
+  	color: #fff;
+  	text-decoration: none;
+  	// text-transform: uppercase;
+  	letter-spacing: 1px;
+  	font-weight: 400;
+  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  	font-size: 1em;
+  }
+
+  nav a:hover, nav a:focus {
+	   outline: none;
+  }
 }
 
-ol li {
-  padding: 10px;
-  margin-left: 35px;
-  font-size: 28px;
-  text-align: left;
+.fancy a {
+  padding: 0 0 5px;
+}
+
+.fancy a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.fancy a:hover::after,
+.fancy a:focus::after {
+  height: 4px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 #bg {
@@ -161,6 +205,60 @@ ol li {
   border-radius: 50px;
 }
 
+#card {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.20);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+
+  #card_details {
+    padding: 20px;
+    float: left;
+    overflow: hidden;
+    width: 60%;
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0;
+      margin: 2px 0 2px 0;
+    }
+
+    .label {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 15px;
+    }
+  }
+
+  #card_avatar {
+    float: left;
+    width: 30%;
+
+    img {
+      width:100%;
+      height:auto;
+      border-radius:4px 0 0 4px;
+      -webkit-border-radius:4px 0 0 4px;
+      -moz-border-radius:4px 0 0 4px;
+      position:relative;
+    }
+  }
+
+}
 
 /* ==========================================================================
 Helper classes
