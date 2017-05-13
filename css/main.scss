@@ -104,25 +104,8 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
-  font-size: 34px;
-  font-weight:400;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-}
-
-#wrapper {
-  margin: 0 auto;
-  max-width: 100px;
-  margin-top: 33%;
-}
-
 #content {
   margin: 0 auto;
-  margin-top: 75px;
-  // max-width: 832px;
   max-width: 1178px;
 }
 
@@ -130,8 +113,18 @@ nav {
   margin: 0 auto;
   margin-bottom: 40px;
   font-size: 20px;
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
+
+  h1 {
+    font-size: 34px;
+    font-weight:400;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 75px;
+  }
 
   a {
   	position: relative;
@@ -180,33 +173,6 @@ nav {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   transform: translateY(0px);
-}
-
-#bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0%;
-  height: 100vh;
-  padding: 0;
-  z-index: -1;
-  background-color: #000;
-  overflow: hidden;
-  background: url('/assets/bg.jpg');
-  background-position: left bottom;
-  background-size: cover;
-}
-
-.enter {
-  background-color: #ffffff;
-  border: #000000 solid;
-  padding: 10px 25px 10px 25px;
-  margin: 0 auto;
-  font-size: 24px;
-  font-weight: 700;
-  color: #333333;
-  text-decoration: none;
-  border-radius: 50px;
 }
 
 #card {
