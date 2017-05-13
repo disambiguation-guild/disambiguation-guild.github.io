@@ -107,14 +107,9 @@ body {
 nav {
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: 60px;
   font-size: 20px;
   max-width: 800px;
   text-align: center;
-
-  img {
-    max-width: 25px;
-  }
 
   h1 {
     font-size: 34px;
@@ -179,6 +174,12 @@ nav {
   margin: 0 auto;
   max-width: 1178px;
   text-align: center;
+  .logo {
+    img {
+      max-width: 28px;
+      margin-top: 40px;
+    }
+  }
 }
 
 #card {
