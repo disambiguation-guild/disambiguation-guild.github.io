@@ -97,7 +97,10 @@ body {
   font-family: 'Karla', sans-serif;
   background: url('/assets/bg2.jpg');
   background-position: left bottom;
-  // background-size: cover;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -120,14 +123,15 @@ h1 {
   margin: 0 auto;
   margin-top: 75px;
   // max-width: 832px;
-  max-width: 1253px;
+  max-width: 1178px;
 }
 
 nav {
   margin: 0 auto;
   margin-bottom: 40px;
   font-size: 20px;
-  max-width: 550px;
+  max-width: 600px;
+  text-align: center;
 
   a {
   	position: relative;
@@ -209,18 +213,18 @@ nav {
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0,0,0,.20);
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-right: 5px;
   position: relative;
   display: inline-block;
-  width: 400px;
-  height: 200px;
+  width: 380px;
+  height: 190px;
 
   #card_details {
     padding: 20px;
     float: left;
     overflow: hidden;
-    width: 60%;
+    width: 55%;
 
     .name {
       font-size: 22px;
@@ -229,7 +233,7 @@ nav {
     }
 
     p {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 400;
       padding: 0;
       margin: 2px 0 2px 0;
