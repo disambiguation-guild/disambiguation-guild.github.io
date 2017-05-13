@@ -104,11 +104,6 @@ body {
   background-attachment: fixed;
 }
 
-#content {
-  margin: 0 auto;
-  max-width: 1178px;
-}
-
 nav {
   margin: 0 auto;
   margin-bottom: 40px;
@@ -175,6 +170,13 @@ nav {
   transform: translateY(0px);
 }
 
+
+#content {
+  margin: 0 auto;
+  max-width: 1178px;
+  text-align: center;
+}
+
 #card {
   background: #ffffff;
   border-radius: 4px;
@@ -185,6 +187,7 @@ nav {
   display: inline-block;
   width: 380px;
   height: 190px;
+  text-align: left;
 
   #card_details {
     padding: 20px;
