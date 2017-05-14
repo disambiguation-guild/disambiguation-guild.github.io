@@ -121,21 +121,21 @@ nav {
   }
 
   a {
-  	position: relative;
-  	display: inline-block;
-  	margin: 0px 25px;
-  	outline: none;
-  	color: #fff;
-  	text-decoration: none;
-  	// text-transform: uppercase;
-  	letter-spacing: 1px;
-  	font-weight: 400;
-  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-  	font-size: 1em;
+    position: relative;
+    display: inline-block;
+    margin: 0px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    // text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1em;
   }
 
   a:hover, a:focus {
-	   outline: none;
+    outline: none;
   }
 }
 
@@ -174,8 +174,8 @@ nav {
   max-width: 1178px;
   text-align: center;
   .logo img {
-      max-width: 28px;
-      margin-top: 40px;
+    max-width: 28px;
+    margin-top: 40px;
   }
 }
 
