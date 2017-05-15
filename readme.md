@@ -6,3 +6,9 @@ useless website
 3. clone this repo and cd to it
 4. run 'bundle exec jekyll serve'
 5. go to localhost:4000
+
+# todo
+- hover state for progression cards? maybe mob name or something
+- home page description, showcase vids/stream (mourds idea)
+- contact page with btags?
+- add steps to contribute to site
