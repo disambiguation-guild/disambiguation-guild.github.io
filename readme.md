@@ -12,3 +12,4 @@ useless website
 - home page description, showcase vids/stream (mourds idea)
 - contact page with btags?
 - add steps to contribute to site
+- responsive/bootstrap
