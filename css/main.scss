@@ -270,6 +270,7 @@ h1 {
   }
 }
 
+
 #progress {
   background: #ffffff;
   border-radius: 4px;
@@ -306,6 +307,24 @@ h1 {
     }
   }
 }
+
+// #progress:hover img {
+//   opacity: 0.3;
+// }
+//
+// #progress:hover .progress_overlay {
+//   opacity: 1;
+// }
+//
+// .progress_overlay {
+//   transition: .5s ease;
+//   opacity: 0;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+// }
 
 /* ==========================================================================
 Helper classes
