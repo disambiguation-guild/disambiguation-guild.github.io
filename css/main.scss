@@ -200,11 +200,11 @@ h1 {
   position: relative;
   display: inline-block;
   max-width: 725px;
-  text-align: center;
+  text-align: left;
 
   p {
     font-size: 18px;
-    padding: 0px 35px 18px 35px;
+    padding: 15px 35px 18px 35px;
     line-height: 1.7em;
   }
 
@@ -340,7 +340,7 @@ Helper classes
 
 /*
 * Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+* https://snook.ca/archives/html_and_css/hiding--for-accessibility
 *
 * 1. For long content, line feeds are not interpreted as spaces and small width
 *    causes content to wrap 1 word per line:
