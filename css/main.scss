@@ -110,7 +110,7 @@ body {
 
 nav {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   font-size: 20px;
   max-width: 800px;
   text-align: center;
@@ -314,23 +314,42 @@ h2 {
   }
 }
 
-// #progress:hover img {
-//   opacity: 0.3;
-// }
-//
-// #progress:hover .progress_overlay {
-//   opacity: 1;
-// }
-//
-// .progress_overlay {
-//   transition: .5s ease;
-//   opacity: 0;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-// }
+ul, li {
+  list-style-type: none;
+  display: inline;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 0;
+  padding-left: 0;
+  border-radius: 6px;
+  padding: 20px;
+  margin:0px 3px;
+}
+
+li#antorus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li#tos {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li#nighthold {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li#tov {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li#en {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* ==========================================================================
 Helper classes
