@@ -1,6 +1,13 @@
-$(document).ready(function(event){
-  $("#ul-menu-list li").click(function () {
-      $('.prog-content').hide().eq($(this).index()).show();
-  });
-  $('#ul-menu-list li:first').trigger('click'); // Default
-});
+$(document).ready(function(){
+
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
