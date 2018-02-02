@@ -285,9 +285,7 @@ h2 {
   margin-right: 5px;
   position: relative;
   display: inline-block;
-  width: 190px;
-  // height: 190px;
-  text-align: left;
+  width: 170px;
 
   #progress_details {
     padding: 15px;
@@ -317,37 +315,44 @@ h2 {
 ul, li { margin: 0; padding: 0; }
 
 ul.tabs{
-	margin: 0px 0px 60px 0px;
+  float: left;
+	margin: 0px 0px 0px 0px;
 	padding: 0px;
 	list-style: none;
+  max-width: 200px;
 }
 
 ul.tabs li{
+  text-align: left;
   margin: 0;
 	background: none;
 	color: #fff;
-  font-size: 19px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 4px;
-	display: inline;
-	padding: 15px 15px;
+	display: block;
+	padding: 10px 10px;
 	cursor: pointer;
   font-weight: bold;
-  border-bottom: 3px solid #ffffff;
+  // border-bottom: 3px solid #ffffff;
 }
 
 ul.tabs li.current{
-  border-bottom: 3px solid #009A00;
+  // border: 3px solid #009A00;
+  color: #009A00;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                0px 8px 13px rgba(0,0,0,0.1),
                0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .tab-content{
+  text-align: left !important;
+  width: 80%;
 	display: none;
 }
 
 .tab-content.current{
+  float: right;
 	display: inherit;
 }
 
@@ -439,8 +444,36 @@ These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1050px) {
+
+  #progress {
+    text-align: center;
+  }
+
+  ul.tabs{
+    text-align: center;
+    float: none;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    list-style: none;
+    max-width: 100%;
+  }
+
+  ul.tabs li{
+  	display: inline-block;
+  }
+
+  .tab-content{
+    text-align: center !important;
+    width: 100%;
+    display: none;
+  }
+
+  .tab-content.current{
+    text-align: center;
+    float: none;
+    display: inherit;
+  }
 }
 
 @media print,
